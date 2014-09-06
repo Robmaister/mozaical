@@ -57,8 +57,13 @@ WSGI_APPLICATION = 'mozaical_app.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'ENGINE': 'sql_server.pyodbc',
+        'NAME': 'mozaical-db',
+        'HOST': 'ahiuybuixo.database.windows.net',
+        'PORT': 1433,
+        'USER': 'mz-root@ahiuybuixo',
+        'PASSWORD': 'Mozaical1',
+        
     }
 }
 
