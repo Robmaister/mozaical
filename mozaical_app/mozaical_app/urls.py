@@ -10,6 +10,6 @@ urlpatterns = patterns('',
     # url(r'^$', 'mozaical_app.views.home', name='home'),
     # url(r'^blog/', include('blog.urls')),
 
-    url(r'^moz/', include(moz.urls)),
+    url(r'^', include(moz.urls)),
     url(r'^admin/', include(admin.site.urls)),
 )
