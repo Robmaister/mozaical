@@ -1,6 +1,6 @@
 from django.conf.urls import patterns, include, url
 
-import moz
+import moz.urls
 
 from django.contrib import admin
 admin.autodiscover()
